@@ -1,0 +1,26 @@
+{
+  "name": "EO-bookmarks",
+  "homepage": "https://github.com/EOussama/EO-bookmarks",
+  "authors": [
+    "Eoussama <oussama_gtacj@live.fr>"
+  ],
+  "description": "A simple website bookmarking tool.",
+  "main": "src/index.html",
+  "keywords": [
+    "bookmarks",
+    "bookmarks-manager",
+    "bookmark",
+    "website-bookmarking",
+    "eo-bookmarks",
+    "bootstrap",
+    "bootstrap4"
+  ],
+  "license": "Apache-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
