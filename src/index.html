@@ -1,0 +1,84 @@
+<!--
+
+    @name:       EO Bookmarks
+    @version:    0.1.0
+    @author:     EOussama
+    @license     Apache-2.0
+    @source:     https://github.com/EOussama/EO-bookmarks
+    
+-->
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <!-- Meta data. -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="EOussama">
+        <meta name="application-name" content="EO bookmarks">
+        <meta name="description" content="A simple website bookmarking tool.">
+        <meta name="keywords" content="bookmarks, bookmarks-manager, bookmark, website-bookmarking, eo-bookmarks, bootstrap, bootstrap4">
+
+        <!-- The main stylesheets. -->
+        <link rel="stylesheet" href="assets/css/main.css">
+
+        <!-- The favicon. -->
+        <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+
+        <!-- The title. -->
+        <title>EO Bookmarks</title>
+    </head>
+
+    <body>
+
+        <!-- The main content. -->
+        <main class="container">
+
+            <!-- The control card. -->
+			<div class="card">
+				<div class="card-header">
+					<h1 class="text-center">EO Bookmarks</h1>
+                </div>
+                
+                <!-- The input form. -->
+				<form class="form-group">
+					<input class="form-control" type="url" placeholder="Input a URL" name="url" required>
+                    <input class="form-control" type="text" placeholder="Input a bookmark name" name="label">
+                    
+                    <!-- The input buttons. -->
+					<div class="row">
+						<input class="form-control btn btn-outline-primary" type="submit" value="Bookmark">
+						<input class="form-control btn btn-outline-secondary" type="reset">
+					</div>
+				</form>
+			</div>
+            
+            <!-- The bookmarks container. -->
+			<div class="card">
+				<div class="card-header">
+					<h4>
+                        <i class="fas fa-bookmark fa-sm"></i>
+                        Bookmarks
+                    </h4>
+				</div>
+				
+				<div class="card-body">
+
+                    <!-- The bookmark entries. -->
+					<ul class="list-group" id="bookmark-list"></ul>
+                    
+                    <!-- The error message. -->
+					<div id="empty-msg" class="alert alert-secondary">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        No bookmarks saved!
+                    </div>
+				</div>
+			</div>
+		</main>
+
+        <!-- The main javascript file. -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
